@@ -1,1 +1,2 @@
 - Create a js function that gets a number as input and returns on the screen te reverse format of that number
+- Write a function that accepts a string as parameter and converts the first letter into uppercase
