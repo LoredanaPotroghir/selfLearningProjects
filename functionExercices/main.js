@@ -75,3 +75,18 @@ for (var i = 0; i < sources.length; i++) {
     element.style.display = "block";
     flowers.appendChild(element);
 }
+var parentElement = document.getElementById("people");
+const people = [
+    { name: "John", age: 24 },
+    { name: "No", age: 25 },
+    { name: "Ye", age: 26 },
+    { name: "Yunh", age: 27 },
+    { name: "Lene", age: 29 },
+];
+for (var i = 0; i < people.length; i++) {
+    var element = document.createElement("li");
+    var text = document.createTextNode(people[i].name + " " + people[i].age);
+
+    parentElement.appendChild(element);
+    element.appendChild(text);
+}
