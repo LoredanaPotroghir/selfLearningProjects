@@ -60,3 +60,18 @@ for (var i = 0; i < names.length; i++) {
     element.appendChild(text);
     list2.appendChild(element);
 }
+
+var flowers = document.getElementById("flowers");
+const sources = [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Die_Tulpe_3918.JPG/1200px-Die_Tulpe_3918.JPG",
+    "http://ankert.hu/wp-content/uploads/2018/07/tulip%C3%A1n.jpg",
+    "https://www.szepzold.hu/files/Image/Sulyok%20J%C3%B3zsefn%C3%A9/Hogyan%20nevelj%C3%BCnk%20t%C3%B6k%C3%A9letes%20tulip%C3%A1nt/721444_34888536_resize.jpg",
+    "https://ripost.hu/wp-content/uploads/kepadatbazis/thumbs/2018-03-05/619d5fc820a0159802a44849feb4e942/620x0.jpg",
+];
+for (var i = 0; i < sources.length; i++) {
+    var element = document.createElement("img");
+    element.src = sources[i];
+    element.style.width = "200px";
+    element.style.display = "block";
+    flowers.appendChild(element);
+}
