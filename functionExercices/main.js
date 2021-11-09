@@ -39,3 +39,24 @@ function convertToUpperCase() {
         console.log(output);
     }
 }
+
+// const names = ['John', 'Dana', 'Nora', 'Stef']
+// const list = document.getElementById("list")
+// for (let i = 0; i < names.length; i++) {
+//     var item = document.createElement("");
+
+// }
+
+document.getElementById("li1").innerHTML = "John Doe";
+document.getElementById("li2").innerHTML = "Dana Doe";
+document.getElementById("li3").innerHTML = "Nora Doe";
+document.getElementById("li4").innerHTML = "Stef Doe";
+
+var list2 = document.getElementById("list2");
+const names = ["John", "Dana", "Nora", "Stef"];
+for (var i = 0; i < names.length; i++) {
+    var element = document.createElement("li");
+    var text = document.createTextNode(names[i] + " " + "Doe");
+    element.appendChild(text);
+    list2.appendChild(element);
+}
