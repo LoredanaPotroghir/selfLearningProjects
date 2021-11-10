@@ -90,3 +90,14 @@ for (var i = 0; i < people.length; i++) {
     parentElement.appendChild(element);
     element.appendChild(text);
 }
+
+function button() {
+    var list = document.getElementById("list3");
+    const names = ["Lore", "Dana", "Mia", "Camilla"];
+    for (var i = 0; i < names.length; i++) {
+        var element = document.createElement("li");
+        var text = document.createTextNode(names[i]);
+        element.appendChild(text);
+        list.appendChild(element);
+    }
+}
