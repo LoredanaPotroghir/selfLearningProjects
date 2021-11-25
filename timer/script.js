@@ -1,3 +1,5 @@
+var i = 0;
+
 const countdown = () =>
 {
     const countDate = new Date(" December 25, 2021, 00:00:00").getTime()
@@ -18,6 +20,11 @@ const countdown = () =>
     document.querySelector(".hour").innerText = textHour;
     document.querySelector(".minute").innerText = textMinute;
     document.querySelector(".second").innerText = textSecond;
+
+    document.querySelector(".function").innerText = i;
+    i += 1
+
+
 
 };
 countdown();
